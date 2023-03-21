@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutterfmod/flutterfmod.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('flutterfmod');
@@ -16,8 +15,4 @@ void main() {
   tearDown(() {
     channel.setMockMethodCallHandler(null);
   });
-
-  // test('getPlatformVersion', () async {
-  //   expect(await Flutterfmod.platformVersion, '42');
-  // });
 }
